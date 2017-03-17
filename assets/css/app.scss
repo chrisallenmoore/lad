@@ -1,1 +1,6 @@
 /* This file is for your main application css. */
+@import '_variables.scss';
+@import '_mixins.scss';
+@import '_bulma-overrides.scss';
+@import '_bulma-the-missing-parts.scss';
+@import '_theme.scss';

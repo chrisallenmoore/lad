@@ -21,7 +21,10 @@ exports.config = {
             // }
         },
         stylesheets: {
-            joinTo: "css/app.css"
+            joinTo: {
+                'css/app.css': '*.css',
+                'css/app.css': /(^node_modules|bulma|css|bulma.css)/
+            }
         },
         templates: {
             joinTo: "js/app.js"
@@ -61,6 +64,9 @@ exports.config = {
     },
 
     npm: {
-        enabled: true
+        enabled: true,
+        styles: {
+            bulma: ['css/bulma.css']
+        }
     }
 };

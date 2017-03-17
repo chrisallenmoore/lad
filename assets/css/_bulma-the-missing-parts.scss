@@ -1,0 +1,48 @@
+// Bulma the missing parts
+// automatically make columns equal heights
+
+.is-equal-height {
+    > .column {
+        display: flex;
+    }
+}
+// make columns stack vertically
+
+.is-flex-column {
+    flex-direction: column;
+}
+// make columns sit side by side horizontally
+
+.is-flex-row {
+    flex-direction: row;
+}
+// make flexed item align at start
+
+.is-flex-start {
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+}
+// make flexed item align in the center
+
+.is-flex-center {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+// make flexed item align at end
+
+.is-flex-end {
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+}
+
+.is-full-width {
+    width: 100%;
+}
+
+.has-text-centered {
+    margin: 0 auto;
+    text-align: center;
+}
