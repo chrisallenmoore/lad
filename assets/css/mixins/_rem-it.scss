@@ -1,0 +1,43 @@
+// This mixin will allow you to choose whether you want a just rem or both rem and a px fallback
+$html-base-font-size: 62.5%;
+$pxFallback: YES; // set to NO if you want only rem (no matter if you supply px or rem) or set to YES if you want both rem and fallback px values
+@function parseInt($n) {
+     @return $n / ($n * 0 + 1);
+}
+@mixin remIt($property, $values) {
+    // you can use either px or rem, doesn't matter
+    $px: ();
+    $rem: ();
+    @each $value in $values {
+         @if $value==0 or $value==auto{
+            $px: append($px, $value);
+            $rem: append($rem, $value);
+        }
+        @else {
+            $unit: unit($value);
+            $val: parseInt($value);
+
+            @if $unit== "px" {
+                $px: append($px, $value);
+                $rem: append($rem, ($val / 10 + rem));
+            }
+
+            @if $unit== "rem" {
+                $px: append($px, ($val * 10 + px));
+                $rem: append($rem, $value);
+            }
+        }
+    }
+    @if $px==$rem {
+        #{$property}: $px;
+    }
+    @else {
+        @if $pxFallback== "YES" {
+            #{$property}: $px;
+            #{$property}: $rem;
+        }
+        @else {
+            #{$property}: $rem;
+        }
+    }
+}

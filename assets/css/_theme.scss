@@ -1,1 +1,15 @@
 // Site styles go here
+
+.pre-footer {
+    padding: 0.5rem 1.5rem;
+    border-bottom: 1px solid darken($footer-bg,5%);
+}
+
+.product {
+    background-position: center;
+    background-size: cover;
+    max-width: 485px;
+    min-height: 400px;
+    height: auto;
+    margin: 0 auto;
+}

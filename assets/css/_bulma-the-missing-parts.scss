@@ -23,6 +23,10 @@
     align-items: flex-start;
     flex: 1;
 }
+
+.is-justified-flex-start {
+    justify-content: flex-start;
+}
 // make flexed item align in the center
 
 .is-flex-center {
@@ -36,6 +40,11 @@
     display: flex;
     align-items: flex-end;
     flex: 1;
+    justify-content: flex-end;
+}
+
+.is-justified-flex-end {
+    justify-content: flex-end;
 }
 
 .is-full-width {

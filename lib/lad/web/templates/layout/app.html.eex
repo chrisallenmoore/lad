@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,27 +9,20 @@
 
     <title>Hello Lad!</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
-  </head>
+    <script src="https://use.fontawesome.com/be6d1c702b.js"></script>
+</head>
 
-  <body>
-    <div class="container">
-      <header class="header">
-        <nav role="navigation">
-          <ul class="nav nav-pills pull-right">
-            <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
-          </ul>
-        </nav>
-        <span class="logo"></span>
-      </header>
+<body>
+    <%= render Lad.Web.LayoutView, "navbar.html", conn: @conn %>
 
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+    <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+    <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
 
-      <main role="main">
+    <main role="main">
         <%= render @view_module, @view_template, assigns %>
-      </main>
+    </main>
 
-    </div> <!-- /container -->
+    <%= render Lad.Web.LayoutView, "footer.html", conn: @conn %>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
-  </body>
+</body>
 </html>

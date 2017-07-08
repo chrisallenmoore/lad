@@ -1,0 +1,93 @@
+<section class="section">
+    <div class="container">
+
+        <div class="columns is-multiline">
+
+            <div class="column is-one-quarter-desktop is-half-tablet">
+                <div class="card">
+                    <a href="#">
+
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="http://lorempixel.com/600/900" alt="Image">
+                            </figure>
+                        </div>
+                        <header class="card-header">
+                            <h2 class="card-header-title">Title</h2>
+                        </header>
+
+                        <div class="card-content">
+                            <p class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Phasellus nec iaculis mauris.
+                            </p>
+                        </div>
+
+                        <div class="card-footer">
+                            <p class="card-footer-item is-justified-flex-start">
+                                <span>$21.00</span>
+                            </p>
+                            <p class="card-footer-item is-justified-flex-end">
+                                <button href="#" class="button">More details</button>
+                            </p>
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+
+            <div class="column is-one-quarter-desktop is-half-tablet">
+                <a href="#">
+                    <div class="product" style="background-image: url(http://lorempixel.com/600/900)">
+                        <code class="html">is-one-quarter</code>
+                    </div>
+                </a>
+            </div>
+            <div class="column is-one-quarter-desktop is-half-tablet">
+                <a href="#">
+                    <div class="product" style="background-image: url(http://lorempixel.com/485/400)">
+                        <code class="html">is-one-quarter</code>
+                    </div>
+                </a>
+            </div>
+            <div class="column is-one-quarter-desktop is-half-tablet">
+                <a href="#">
+                    <div class="product" style="background-image: url(http://lorempixel.com/485/400)">
+                        <code class="html">is-one-quarter</code>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column is-one-quarter-desktop is-half-tablet">
+                <a href="#">
+                    <div class="product" style="background-image: url(http://lorempixel.com/485/400)">
+                        <code class="html">is-one-quarter</code>
+                    </div>
+                </a>
+            </div>
+            <div class="column is-one-quarter-desktop is-half-tablet">
+                <a href="#">
+                    <div class="product" style="background-image: url(http://lorempixel.com/485/400)">
+                        <code class="html">is-one-quarter</code>
+                    </div>
+                </a>
+            </div>
+            <div class="column is-one-quarter-desktop is-half-tablet">
+                <a href="#">
+                    <div class="product" style="background-image: url(http://lorempixel.com/485/400)">
+                        <code class="html">is-one-quarter</code>
+                    </div>
+                </a>
+            </div>
+            <div class="column is-one-quarter-desktop is-half-tablet">
+                <a href="#">
+                    <div class="product" style="background-image: url(http://lorempixel.com/485/400)">
+                        <code class="html">is-one-quarter</code>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
